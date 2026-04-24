@@ -22,9 +22,11 @@ class AddNoteForm extends StatefulWidget {
 }
 
 class _AddNoteFormState extends State<AddNoteForm> {
-  final GlobalKey<FormState> formKey = GlobalKey();
+  final GlobalKey<FormState> formKey =
+      GlobalKey(); //Give me control over this form from outside
 
-  AutovalidateMode autoValidateMode = AutovalidateMode.disabled;
+  AutovalidateMode autoValidateMode =
+      AutovalidateMode.disabled; //No validation messages at first
 
   String? title, subTitle;
   @override
