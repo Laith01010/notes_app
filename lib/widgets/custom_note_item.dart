@@ -46,7 +46,9 @@ class NoteItem extends StatelessWidget {
               trailing: Transform.translate(
                 offset: Offset(0, -12),
                 child: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    note.delete();
+                  },
                   icon: Icon(Icons.delete, color: Colors.black, size: 35),
                 ),
               ),
